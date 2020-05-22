@@ -14,7 +14,7 @@ var pollint = 10000; // poll every 10 seconds, only changed values will be publi
 
 var exec = require('child_process').exec;
 var mqtt = require('mqtt');
-var mclient = mqtt.createClient(mqttbroker.port, mqttbroker.address);
+var mclient = mqtt.connect('mqtt://10.9.99.222:1883'); // enter your broker IP and port here
 var curvalues = {}; // holds current values
 
 function executeCmd(cmd, callback) {
@@ -40,7 +40,7 @@ function executeCmd(cmd, callback) {
 
 function poll() {
 
-    var wanted = ['upsname', 'serialno', 'status', 'linev', 'linefreq', 'loadpct', 'battv', 'bcharge'];
+    var wanted = ['upsname', 'serialno', 'status', 'linev', 'linefreq', 'loadpct', 'battv', 'bcharge', 'timeleft'];
 
     executeCmd('apcaccess', function(err, response) {
       if (err) {
