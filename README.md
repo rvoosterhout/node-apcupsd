@@ -55,7 +55,7 @@ OUTPUTV  : 230.0 Volts
 
 Install node-apcupsd
 <pre>
-$ git clone https://github.com/cyberjunky/node-apcupsd.git
+$ git clone https://github.com/rvoosterhout/node-apcupsd.git
 </pre>
 Install required libs
 <pre>
