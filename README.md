@@ -1,4 +1,4 @@
-Slightly modified to fix an error I got after running node app.js
+Slightly modified to fix an error I got after running node app.js Also my time remaining is now send to my MQTT broker.
 
 node-apcupsd
 ============
