@@ -1,3 +1,5 @@
+Slightly modified to fix an error I got after running node app.js
+
 node-apcupsd
 ============
 
